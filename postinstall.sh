@@ -77,7 +77,6 @@ PROGRAMAS_PARA_INSTALAR=(
   wget
   gnome-tweaks
   zsh
-  gir1.2-gmenu-3.0
 )
 
 # ---------------------------------------------------------------------- #
