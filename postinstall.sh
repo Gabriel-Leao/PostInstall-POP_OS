@@ -72,6 +72,7 @@ just_apt_update() {
 
 ##DEB SOFTWARES TO INSTALL
 PROGRAMAS_PARA_INSTALAR=(
+  snapd
   vlc
   git
   wget
@@ -119,6 +120,16 @@ install_flatpaks() {
   flatpak install flathub com.discordapp.Discord -y
   flatpak install flathub com.getpostman.Postman -y
   flatpak install flathub com.valvesoftware.Steam -y
+  flatpak install flathub com.bitwarden.desktop -y
+}
+
+## Instalando pacotes Snap ##
+
+install_snaps() {
+
+  echo -e "${VERDE}[INFO] - Instalando pacotes snap${SEM_COR}"
+
+  sudo snap install authy
 }
 
 
@@ -196,6 +207,7 @@ travas_apt
 just_apt_update
 install_debs
 install_flatpaks
+install_snaps
 extra_config
 git_config
 install_theme
