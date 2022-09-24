@@ -192,7 +192,7 @@ install_nvm() {
 
   curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
   source ~/.nvm/nvm.sh
-  nvm install 16.14.0
+  nvm install --lts
   npm install -g yarn
 }
 
